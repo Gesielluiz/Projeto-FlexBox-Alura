@@ -1,0 +1,49 @@
+/*Para colocar os objetos lado a lado é necessário
+ introduzir na tag main um display:flex:*/
+
+.flexContainer {
+    display: flex;
+}
+
+/*Para espaçar os itens utilizamos o justify-content: space-between 
+que introduz espaço entre os objetos:*/
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Para adicionar um espaço no entorno dos itens 
+utilizamos o justify-content: space-around:*/
+
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+/*Ainda, um conceito importante de ser revisto é 
+o flex-direction. O flex-direction quando adicionado
+ naturalmente distribuí os elementos em linhas, 
+ mas acrescentando a ele o valor columns a colocação dos 
+ itens passa a ser ordenada por colunas. Para verificar o 
+ funcionamento do flex vamos adicionar um 
+ comentário no justify-content e align-items para ignorar 
+ estes recursos:*/
+
+ .flexContainer {
+    display: flex;
+    /*justify-content: space-around;
+    align-items: center;*/
+    flex-direction: column;
+}
+
+/*E se deixarmos o comentário apenas no justify-content?*/
+
+.flexContainer {
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center;
+    flex-direction: column;
+}
+
